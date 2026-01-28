@@ -17,4 +17,13 @@ time.sleep(3)
 alert.accept()
 time.sleep(3)
 
+alert_button = driver.find_element(By.XPATH, value='//*[@id="content"]/div/ul/li[2]/button')
+alert_button.click()
+
+alert = driver.switch_to.alert
+print(alert.text)
+time.sleep(3)
+alert.dismiss()
+time.sleep(3)
+
 input("enter")
