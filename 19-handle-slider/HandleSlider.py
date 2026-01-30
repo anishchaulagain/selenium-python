@@ -12,8 +12,9 @@ slider_input = driver.find_element(By.TAG_NAME, value="input")
 
 actions = ActionChains(driver)
 actions.click_and_hold(slider_input).move_by_offset(50, 50).release().perform()
-time.sleep(5)
+time.sleep(7)
 driver.quit()
+
 
 
 input("enter")
